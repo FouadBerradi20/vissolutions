@@ -59,7 +59,7 @@
 
         <div class="form-group">
 
-            <input hidden type="text" name="token" value="{{$data['token']}}" class="form-control"  aria-describedby="emailHelp">
+            <input  type="text" name="token" value="{{$data['token']}}" class="form-control"  aria-describedby="emailHelp">
         </div>
 
 
