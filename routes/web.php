@@ -33,7 +33,7 @@ Route::post('/updateestate', function () {
     $url='https://api.whise.eu/v1/estates/updatesubdetails';
     $subdetailId=2089;
     //dd($epc,$token,$url,$subdetailId);
-    $response=Http::patch($url)->json(
+    /*$response=Http::patch($url)->json(
         ['token'=>$token,'subdetails'=>[
             [
                 'subdetailId'=>$subdetailId,
@@ -42,9 +42,9 @@ Route::post('/updateestate', function () {
 
 
         ]]
-    );
+    );*/
 
-    dd($response->body());
+    return'fouad';
 
 
 
