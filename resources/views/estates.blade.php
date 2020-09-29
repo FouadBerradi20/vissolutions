@@ -21,11 +21,7 @@
     <div class="row">
         <div class="col-6 offset-3">
 
-            @if(Session::has('message'))
-            <div class="alert alert-success" role="alert">
-                {{Session::get('message')}}
-            </div>
-            @endif
+          
     <form method="post" action="/updateestate">
 
         @csrf
