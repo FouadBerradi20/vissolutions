@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-6 offset-3">
 
-          
+
     <form method="post" action="/updateestate">
 
         @csrf
