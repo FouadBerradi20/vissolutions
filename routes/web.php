@@ -49,7 +49,7 @@ Route::post('/updateestate', function () {
 
     );
 
-    return $response->json();
+    return view('estates')->with(['message'=>'estate has been updated with success']);
 
 
 

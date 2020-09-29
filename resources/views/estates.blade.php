@@ -21,6 +21,11 @@
     <div class="row">
         <div class="col-6 offset-3">
 
+            @if(Session::has('message'))
+            <div class="alert alert-success" role="alert">
+                {{Session::get('message')}}
+            </div>
+            @endif
     <form method="post" action="/updateestate">
 
         @csrf
@@ -59,7 +64,7 @@
 
         <div class="form-group">
 
-            <input  type="text" name="token" value="{{$data['token']}}" class="form-control"  aria-describedby="emailHelp">
+            <input hidden type="text" name="token" value="{{$data['token']}}" class="form-control"  aria-describedby="emailHelp">
         </div>
 
 
